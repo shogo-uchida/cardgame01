@@ -165,6 +165,8 @@ def main():
     pc_hand = Hand()
     first_deal(player_hand, pc_hand)
 
+main()
+
 '''
 while True:
     show_card(player_hand.cards, pc_hand.cards)

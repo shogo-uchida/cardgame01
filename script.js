@@ -5,6 +5,7 @@ $(function() {
 
 $('#start').click(function(){
 	$('#next').addClass('active');
+	$('.selected').removeClass('selected');
 	console.log('works?');
 });
 

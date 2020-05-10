@@ -15,6 +15,7 @@ def start_game(ev):
 	document['start'].text = 'start'
 	show_card()
 	show_point()
+	document['whichWin'].text = ''
 
 def show_card():
 	player0 = document['player0']
@@ -91,16 +92,26 @@ def loser_judge():
 	if judge == 0:
 		document['whichWin'].text = 'game over, you lost, press reset to continue'
 		document['start'].text = 'reset'
+		back.main()
+		main()
 
 	elif judge == 1:
 		document['whichWin'].text = 'game over, you won, press reset to continue'
 		document['start'].text = 'reset'
+		back.main()
+		main()
+
+
+def main():
+	global player_hand	
+	global pc_hand	
+
+	player_hand = back.player_hand # this should be an array of card
+	pc_hand = back.pc_hand
 
 
 
-
-player_hand = back.player_hand # this should be an array of card
-pc_hand = back.pc_hand
+main()
 
 start_btn = document["start"]
 start_btn.bind('click', start_game)
