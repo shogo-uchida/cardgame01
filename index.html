@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>じゃんけんカードゲーム</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stylesheet.css" />
+        <script type="text/javascript" src="brython.js"></script>
+	<script type="text/javascript" src="brython_stdlib.js"></script>	
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    </head>
+    <body onload="brython()">
+        <script type="text/python" src="to_front.py"></script>
+        <script type="text/python" src="back.py"></script>
+
+        <h1>じゃんけんカードゲーム</h1>
+        <button class = 'btn control' id = 'start'>start</button>
+        <button class = 'btn hide control' id = 'next'>next</button>
+
+
+    <div class = 'PcHand'>
+        <p class = 'hand'>PC hand</p>
+        <div class = 'point' id = 'pcPoint'>point</div>
+        <div class = 'bet' id = 'pcBet'></div>
+    </div>
+
+    <div class = 'grid-container'>
+        <button class = 'grid-item pc_item {select}' id = 'pc0'></button>
+        <button class = 'grid-item pc_item {select}' id = 'pc1'></button>
+        <button class = 'grid-item pc_item {select}' id = 'pc2'></button>
+    </div>
+
+    <!-- {select} is the variable of attribute in HTML 
+    to use in brython -->
+
+    <div class = 'grid-container'>
+        <button class = 'grid-item select' id = 'player0'></button>
+        <button class = 'grid-item select' id = 'player1'></button>
+        <button class = 'grid-item select' id = 'player2'></button>
+    </div>
+
+    <div class = 'PlayerHand'>
+        <p class = 'hand'>Player hand</p>
+        <div class = 'point' id = 'playerPoint'>point</div>
+        <div class = 'bet' id = 'playerBet'></div>
+    </div>
+
+    <div id = 'whichWin'>
+        
+    </div>
+
+    </body>
+</html>

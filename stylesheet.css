@@ -1,0 +1,63 @@
+.grid-container{
+    display: grid;
+    grid-template-rows: 40px;
+    grid-template-columns: 150px 150px 150px;
+    grid-gap: 4px;
+    margin:20px;
+}
+
+.grid-item{
+    display: grid;
+    grid-template-rows: 40px  ;
+    grid-template-columns: 40px;     
+    border: 2px solid #000;
+}
+
+.hand {
+	display: inline-block;
+	margin:20px;
+}
+
+.point {
+	display: inline-block;
+}
+
+
+.bet {
+	display: inline-block;
+}
+
+#start {
+	cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
+
+.selected{
+    background-color: red;
+}
+
+.selectedPc{
+    background-color: red;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 20px;
+  font-weight: 600;
+  font-family: 'Dosis', sans-serif;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.control {
+    font-size: 18px;
+}
+
